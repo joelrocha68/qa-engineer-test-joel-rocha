@@ -1,0 +1,15 @@
+{
+    "validUser": {
+      "email": "joel.rocha2080@proton.me",
+      "password": "XY9UU%*z"
+    },
+    "incorrectUser": {
+      "email": "joel@jo.com",
+      "password": "123456"
+    },
+    "invalidUser": {
+      "email": "joel.com",
+      "password": "123456"
+    }
+  }
+  

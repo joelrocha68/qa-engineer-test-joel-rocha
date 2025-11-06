@@ -2,37 +2,44 @@
 
 Arquivo: `/Bug/template-bug-report.md`
 
-**Bug:** Título direto sobre o problema encontrado
+**Bug:** Botão “Acessar” não exibe foco visual ao ser selecionado com TAB.
 
 **Descrição:**
 
-Explicação do que está errado no sistema
+Durante o teste de acessibilidade na tela de login, foi identificado que o botão “Acessar” não possui um visual com foco quando o usuário navega pela tecla TAB.  
+Foi observado que ao passar o cursor do mouse, o botão muda de cor, mostrando que o foco existe mas funciona somente assim.
 
 **Cenário de Reprodução:**
 
-1. Ação 1
-2. Ação 2
-3. Verificação do erro
+1. Acessar a tela de login pela url `https://qa.navega.com.vc/login`
+2. Pressionar a tecla "TAB" três vezes até o botão “Acessar” receber o foco
+3. Observar que o botão "Acessar" não exibe contorno de foco.
 
 **Resultado Atual:**
 
-Descreva o que o sistema está fazendo incorretamente
+O botão "Acessar" não exibe o foco quando navega com a tecla TAB.
 
 **Resultado Esperado:**
 
-Descreva o comportamento correto esperado
+Ao clicar na tecla TAB três vezes, o botão "Acessar" deve ficar com foco e com um azul mais escuro. (Comportamento já ocorre ao colocar a seta do mouse em cima do botão Acessar)
 
 **Evidência:**
 
-Link, Curl ,print ou vídeo (se aplicável)
+Com a tecla TAB não fica focado
+
+![Com a tecla TAB](image.png)
+
+Com a seta do mouse fica focado
+
+![Com a seta do mouse](image-1.png)
 
 **Hipótese Técnica:**
 
-**Ambiente**:
+**Ambiente**: https://qa.navega.com.vc/login
 
-**Versão:**
+**Versão:** v3.1.1
 
-**Sistema Operacional:**
+**Sistema Operacional:** Ubuntu 22.04
 
-**Navegador:**
+**Navegador:** Google Chrome 142.0
 '
